@@ -77,7 +77,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[0])
             pass
         
         resultDICT["source"] = args[1]
