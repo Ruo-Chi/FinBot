@@ -125,7 +125,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[0], args[3], args[1])
             pass
         
         resultDICT["source"] = args[0]
@@ -149,7 +149,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[3], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -173,7 +173,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[3], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -185,7 +185,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[3], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -197,7 +197,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[4], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -209,7 +209,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[3], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -233,7 +233,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[4], args[2])
             pass
         
         resultDICT["source"] = args[1]
@@ -245,7 +245,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[5], args[1])
             pass
         
         resultDICT["source"] = args[2]
@@ -257,7 +257,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[4], args[1])
             pass
         
         resultDICT["source"] = [x for x in userDefinedDICT if x in args[1]][1]
@@ -281,7 +281,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[4], args[3])
             pass
         
         resultDICT["source"] = args[4]
@@ -305,7 +305,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[2], args[0], args[1])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[0], args[2], args[1])
             pass
         
         resultDICT["source"] = args[0]
@@ -329,7 +329,7 @@ def getResult(inputSTR, utterance, args, resultDICT):
         if CHATBOT_MODE:
             resultDICT["response"] = getResponse(utterance, args)
         else:
-            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[2])
+            resultDICT["response"] = "你要用 {} 換 {} 哦？才換{} 會不會太少？".format(args[1], args[3], args[0])
             pass
         
         resultDICT["source"] = args[1]
