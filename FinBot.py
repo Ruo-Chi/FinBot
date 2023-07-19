@@ -274,7 +274,10 @@ def getTodayExchangeRate(): # get ExchangeRate table
 def moneyName(inputSTR): # input src or tgt to get currency
     moneyDICT = {"歐元": "EUR",
                  "美金": "USD",
+                 "美元": "USD",
                  "日圓": "JPY",
+                 "日元": "JPY",
+                 "日幣": "JPY",
                  "台幣": "TWD",
                  "臺幣": "TWD",
                  "英鎊": "GBP",
@@ -284,7 +287,8 @@ def moneyName(inputSTR): # input src or tgt to get currency
                  "泰銖": "THB",
                  "加幣": "CAD",
                  "加拿大幣": "CAD",
-                 "越南盾": "VND"}
+                 "越南盾": "VND",
+                 "人民幣": "CNY"}
     if (inputSTR == None): # init = TWD
         moneyDICT[inputSTR] = "TWD"
     return moneyDICT[inputSTR]
@@ -311,13 +315,12 @@ if __name__ == "__main__":
     #resultDICT = execLoki(["今天天氣如何？", "後天氣象如何？"], filterLIST)      # output => ["今天天氣", "後天氣象"]
     resultDICT = execLoki("我想要用歐元換50元泰銖")
     print(resultDICT)
-
-  
+ 
     # 匯率
-    #inputLIST = ["我想要用歐元換50元泰銖"]
-    #resultDICT = runLoki(inputLIST)
-    #print("Result => {}".format(resultDICT))
-    
+    inputLIST = ["我想要用歐元換50元泰銖"]
+    resultDICT = runLoki(inputLIST)
+    print("Result => {}".format(resultDICT))
+
     src = moneyName(resultDICT["source"])
     tgt = moneyName(resultDICT["target"])
     amt = amountSTRconvert(resultDICT['amount'])[resultDICT['amount']]
