@@ -22,10 +22,30 @@ DEBUG_Exchange = True
 CHATBOT_MODE = False
 
 userDefinedDICT = {}
+
 try:
     userDefinedDICT = json.load(open(os.path.join(os.path.dirname(__file__), "USER_DEFINED.json"), encoding="utf-8"))
 except Exception as e:
     print("[ERROR] userDefinedDICT => {}".format(str(e)))
+
+#DEBUG_Exchange = True
+userDefinedDICT = {"歐元": "EUR", 
+                 "美金": "USD",
+                 "美元": "USD",
+                 "日圓": "JPY",
+                 "日元": "JPY",
+                 "日幣": "JPY",
+                 "台幣": "TWD",
+                 "臺幣": "TWD",
+                 "英鎊": "GBP",
+                 "法郎": "CHF",
+                 "澳幣": "AUD",
+                 "港幣": "HKD",
+                 "泰銖": "THB",
+                 "加幣": "CAD",
+                 "加拿大幣": "CAD",
+                 "越南盾": "VND",
+                 "人民幣": "CNY"}
 
 responseDICT = {}
 if CHATBOT_MODE:
@@ -33,6 +53,7 @@ if CHATBOT_MODE:
         responseDICT = json.load(open(os.path.join(os.path.dirname(os.path.dirname(__file__)), "reply/reply_Exchange.json"), encoding="utf-8"))
     except Exception as e:
         print("[ERROR] responseDICT => {}".format(str(e)))
+
 
 # 將符合句型的參數列表印出。這是 debug 或是開發用的。
 def debugInfo(inputSTR, utterance):
